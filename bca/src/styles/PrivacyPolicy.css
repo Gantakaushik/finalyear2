@@ -1,0 +1,132 @@
+.PrivacyPolicyPage-wrapper{
+    width: 100vw;
+    height: fit-content;
+    margin-top: 7rem;
+}
+
+.PrivacyPolicyPage-container{
+    /* max-width: 1300px;
+    width: 10/12; */
+    max-width: 70%;
+    min-height: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 2rem;
+    gap: 3.5rem;
+    border-radius: 2rem;
+    text-align: justify;
+    text-justify:inter-word;
+}
+
+.PrivacyPolicyPage-wrapper>a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.PrivacyPolicyPage-main-heading{
+    font-weight: 800;
+    margin: 1.75rem auto;
+    font-size: 4.5rem;
+    line-height: 1rem;
+    display: none;
+    flex-direction: row;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@media (min-width:280px) and (max-width:426px) {
+    #mobile{
+        font-weight: 800;
+        margin: 1.75rem auto;
+        font-size: 2.5rem;
+        line-height: 1rem;
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width:426px) and (max-width:768px){
+    #tablet{
+        font-weight: 800;
+        margin: 1.75rem auto;
+        font-size: 2.5rem;
+        line-height: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width:769px){
+    #laptop{
+        display: flex;
+    }
+    #top{
+        display: flex;
+        flex-direction: row;
+        gap: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+    #bottom{
+        display: flex;
+        flex-direction: row;
+        gap: 1.25rem;
+        /* margin-bottom: 1.25rem; */
+    }
+}
+
+
+  
+
+.PrivacyPolicyPage-text-colors{
+    color:#012447;
+}
+  
+.PrivacyPolicyPage-letter-space{
+    letter-spacing: 0.05rem;
+}
+
+.PrivacyPolicyPage-line-h{
+    line-height: 1.625rem;
+}
+
+.PrivacyPolicyPage-font-w{
+    font-weight: 500;
+}
+
+
+.PrivacyPolicyPage-points-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+
+}
+.PrivacyPolicyPage-point-heading{
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+
+}
+
+.PrivacyPolicyPage-points{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    letter-spacing: 0.025rem;
+    word-spacing: 0.125rem;
+    color:#012447;
+}

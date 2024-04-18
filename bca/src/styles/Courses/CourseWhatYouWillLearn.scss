@@ -1,0 +1,102 @@
+// .faqcontainer{
+//     background-color:rgba(91, 91, 92, 0.267);
+//     padding: 50px 50px;
+//     // width: 80%;
+//     // margin:35px ;
+//     // margin-left: 20px;
+//     // margin-right: 5px;
+   
+    
+
+// }
+.cwywl-faqcontainer {
+    // background-color: rgba(91, 91, 92, 0.267);
+    background-color: #eef1fa;
+    color: black;
+    padding: 50px 50px;
+    transition: background-color 0.3s ease; // Add a smooth transition
+    width: 80vw;
+    margin:0 auto;
+    margin-top: 30rem;
+    
+  }
+  .faqcontainer:hover {
+    // background-color: rgba(150, 150, 150, 0.5); // Change the background color on hover
+    // background-color: #D3D3D3;
+    // color: black;
+  }
+  .cwywl-faqcontainer>h1{
+      // padding: 20px;
+      // font-size: 23px;
+      margin-bottom: 10px;
+      text-align: center;
+  }
+  .combine{
+      padding: 5px;
+  }
+  
+  .faq-question {
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    text-align: left;
+    width: 100%;
+    padding: 15px 25px;
+    font-weight: bold;
+    color: #333; // Change text color
+    transition: color 0.3s ease; // Add a smooth color transition
+    border-radius: 2rem;
+  }
+  
+  
+//   .faq-answer {
+//     display: none;
+//     padding: 15px 25px;
+//     background-color: grey;
+//     color: grey;
+//     transition: background-color 0.3s ease; // Add a smooth transition
+//     border-radius: 2rem;
+//   }
+  
+  .faq-answer:hover {
+    background-color: #f0f0f0; // Change the background color on hover
+  }
+  
+    
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .faq-answer {
+    display: none;
+    padding: 15px 25px;
+    background-color: white;
+    color: grey;
+    animation: fadeIn 0.5s; // Apply the fade-in animation
+    border-radius: 2rem;
+  }
+  
+  .faq-question:focus + .faq-answer {
+    display: block;
+    animation: none; // Disable the animation when it's focused
+  }
+  
+    
+    @media only screen and (max-width: 600px) {
+      .faqcontainer{
+        padding: 19px;
+        overflow-x: hidden;
+      }
+
+      .cwywl-faqcontainer {
+        width: 100vw;
+        padding: 32px 7px;
+        margin-top: 60rem;
+      }
+  
+    }

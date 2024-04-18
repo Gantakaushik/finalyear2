@@ -1,0 +1,90 @@
+// .faqcontainer{
+//     background-color:rgba(91, 91, 92, 0.267);
+//     padding: 50px 50px;
+//     // width: 80%;
+//     // margin:35px ;
+//     // margin-left: 20px;
+//     // margin-right: 5px;
+   
+    
+
+// }
+.faqcontainer {
+    // background-color: rgba(91, 91, 92, 0.267);
+    background-color: #383838;
+    color: white;
+    padding: 50px 50px;
+    transition: background-color 0.3s ease; // Add a smooth transition
+    // max-width: 43rem;
+  }
+  .faqcontainer:hover {
+    // background-color: rgba(150, 150, 150, 0.5); // Change the background color on hover
+    // background-color: #D3D3D3;
+    // color: black;
+  }
+  h1{
+      // padding: 20px;
+      // font-size: 23px;
+      margin-bottom: 10px;
+  }
+  .combine{
+      padding: 5px;
+  }
+  
+  .faq-question {
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    text-align: left;
+    width: 100%;
+    padding: 15px 25px;
+    font-weight: bold;
+    color: #333; // Change text color
+    transition: color 0.3s ease; // Add a smooth color transition
+  }
+  
+  
+  .faq-answer {
+    display: none;
+    padding: 15px 25px;
+    background-color: white;
+    color: grey;
+    transition: background-color 0.3s ease; // Add a smooth transition
+  }
+  
+  .faq-answer:hover {
+    background-color: #f0f0f0; // Change the background color on hover
+  }
+  
+    
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .faq-answer {
+    display: none;
+    padding: 15px 25px;
+    background-color: white;
+    color: grey;
+    animation: fadeIn 0.5s; // Apply the fade-in animation
+  }
+  
+  .faq-question:focus + .faq-answer {
+    display: block;
+    animation: none; // Disable the animation when it's focused
+  }
+  
+    
+    @media only screen and (max-width: 600px) {
+      .faqcontainer{
+        padding: 19px;
+        overflow-x: hidden;
+        max-width: 43rem;
+      }
+  
+    }

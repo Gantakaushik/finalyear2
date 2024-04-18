@@ -1,0 +1,75 @@
+.CompnayCard-card{
+    width: 75%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    gap: 0.6rem;
+    /* background-color: linear-gradient(180deg, rgba(75, 179, 255, 0.70) 0%, rgba(76, 252, 255, 0.85) 50%, rgba(25, 226, 184, 0.40) 100%); */
+}
+
+@media (min-width:280px) and (max-width:425px){
+    .CompnayCard-card{
+        width: 100%;
+    }
+}
+
+.CompnayCard-logo-container{
+    margin: 0 auto;
+}
+
+.CompnayCard-logo-container>img{
+    width: 150px;
+}
+
+.CompnayCard-logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    margin-top: 0.9rem;
+    
+}
+
+.CompnayCard-gst-pan-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+
+    font-size: 1.25rem;
+    line-height: 1rem;
+    font-weight: 500;
+    color:#012447;
+}
+
+.CompnayCard-content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 0.9rem;
+
+    font-size: 1.25rem;
+    line-height: 1rem;
+    font-weight: 400;
+    color:#012447;
+}
+
+.CompnayCard-company-name{
+    margin: 0 auto;
+    margin-top:0.2rem;
+    margin-bottom: 0.5rem;
+
+    font-size: 1.25rem;
+    line-height: 1rem;
+    font-weight: 600;
+    color:#012447;
+}

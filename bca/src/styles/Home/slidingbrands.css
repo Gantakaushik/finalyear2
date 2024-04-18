@@ -1,0 +1,51 @@
+@import url(./App.css);
+.slidingbrands {
+  margin-bottom: 40px;
+}
+
+.slidingbrands-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0 5px 10px;
+  border-top: 1px solid #dde5ea;
+  border-bottom: 1px solid #dde5ea;
+}
+
+.slidingbrands-container h2 {
+  font-weight: 400;
+  font-size: 16px;
+  width: 175px;
+}
+
+.slidingbrands-container h2 span {
+  font-weight: 600;
+  font-size: 18px;
+  display: block;
+}
+
+.brands-container {
+  width: calc(100% - 80px);
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+  transition-timing-function: linear;
+}
+
+.brands-container img {
+  width: 80px;
+}
+
+@media (max-width: 1000px) {
+  .slidingbrands-container {
+    flex-direction: column;
+  }
+  .slidingbrands-container h2 {
+    text-align: center;
+  }
+  .brands-container {
+    width: 100%;
+  }
+}

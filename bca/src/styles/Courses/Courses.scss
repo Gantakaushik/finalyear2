@@ -1,0 +1,20 @@
+.courses-sections-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin-top: 20px;
+    overflow-x: hidden;
+}
+.Courses{
+   overflow-x: hidden;
+  
+}
+@media only screen and (max-width: 600px) {
+    .Courses{
+        // margin-right: -35px;
+        min-height: 600px;
+        overflow: hidden;
+        width: 43rem;
+
+    }
+}

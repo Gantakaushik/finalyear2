@@ -1,0 +1,170 @@
+.head{
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 60px;
+    
+    
+  }
+  
+  
+  .course-list {
+    display: flex;
+    flex-wrap: nowrap;  // Prevent wrapping to the next line
+    // overflow-x: auto;   // Add horizontal scrollbar when needed
+    padding: 30px 60px;
+    padding-right: 40px;
+    margin-bottom: 20px;
+    gap: 2%;
+    margin-right: -40px;
+  
+    justify-content: center;
+   
+  }
+  
+  .course-card {
+    flex: 0 0 250px;    // Set a fixed width for each card
+    margin-right: 20px; // Add spacing between cards
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color:floralwhite;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+    position: relative;
+    
+    img {
+      max-width: 100%;
+      border-radius: 5px;
+    }
+  
+    .course-info {
+      padding: 10px;
+      flex-grow: 1;
+      
+  
+      h3 {
+        font-size: 0.9rem;
+        margin: 0;
+        font-weight: 800;
+      }
+  
+      p {
+        font-size: 0.8rem;
+        // font-style:oblique;
+        // font-weight: 400;
+        padding:5px;
+        margin-bottom: 15px;
+        // margin-right: 10px;
+        margin-left: -4px;
+      }
+  
+  
+      .course-meta {
+        position: absolute; /* Position the meta at the bottom of the card */
+      bottom: 0; /* Align it to the bottom */
+      left: 0; /* Align it to the left */
+      right: 0; 
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 0;
+        // margin: 10px;
+        padding: 10px;
+        margin-left: 9px;
+        .rating,
+        .hours {
+          font-size: 0.8rem;
+          color: black;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    text-decoration: none;
+    color: inherit; /* or specify the desired color */
+  }
+  .span-gradient{
+    text-decoration-color: linear-gradient(to top right, #4BB3FF, #4CFCFF, #00E395);
+  }
+  
+  @media (max-width: 600px) {
+  .head{
+    
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: -40px;
+    overflow-x: hidden;
+  }
+  .course-list{
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch; /* Add smooth scrolling for iOS */
+  scroll-snap-type: x mandatory;
+  scroll-snap-points-x: repeat(100%);
+  scroll-snap-destination: 100% 0%;
+  // animation: scroll 10s linear infinite;
+  overflow: hidden;
+  }
+  
+  
+  .course-card:first-child {
+    margin-left: 158rem;
+    // margin-right: 70rem;
+  }
+  .course-card:last-child {
+    // margin-right: -100rem;
+  }
+  .course-card {
+      animation: scroll 20s linear infinite;
+  
+    .course-info {  
+      h3 {
+        font-size: 1.3rem;
+  
+        width: 20rem;
+      
+        margin-bottom: 3px;
+        
+  
+      }
+  
+      p {
+        font-size: 1.3rem;
+      }
+  
+      .course-meta {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3px;
+  
+       
+  
+        .rating,
+        .hours {
+          margin-top: 10px;
+          // margin-top: auto;
+          font-size:1.3rem;
+          color: black;
+         
+        
+        }
+      }
+    }
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(0); /* Start from the initial position */
+    }
+    100% {
+      transform: translateX(-613%); /* Scroll to the end of the content */
+    }
+    
+  }
+  }

@@ -1,0 +1,297 @@
+.job-description {
+    // margin-top: 80rem;
+    // background-color: #f0f0f0;
+    background-color: white;
+    border: 1px solid #ccc;
+    position: relative;
+    padding: 40px;
+    margin: 20px;
+    margin-top: 90px; 
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+    h2 {
+      font-size: 24px;
+      margin: 0;
+      // padding: 10px;
+      color: #333;
+      margin-left: 10px;
+    }
+  
+    p {
+      margin: 10px 0;
+      font-size: 16px;
+      margin-left: 10px;
+      color: #666;
+      // padding: 2px;
+    }
+  
+    p:first-child {
+      font-weight: bold;
+      // padding: 2px;
+    }
+
+    /* Add this CSS to your Job_Description.scss file or any other CSS file you are using */
+
+.job-actions {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    align-items: flex-start; /* Align buttons to the top */
+    margin-top: 20px;
+    gap: 20px;
+    position: absolute;
+    top:4%;
+    left: 71%;
+}
+
+.back-button {
+    background-color: #007BFF; /* Button background color */
+    color: white; /* Text color */
+    padding: 0px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    font-size: 15px;
+    
+    
+}
+
+.back-button i {
+    margin-right: 5px;
+}
+.role-and-responsibilities {
+  padding: 10px;
+  span{
+    
+    font-weight: 700;
+    font-size: 17px;
+  }
+  .Company{
+    width: 40rem;
+    color: #333;
+    font-weight: 500;
+    margin-left: 0px;
+    margin-bottom: 30px;
+  }
+}
+.candidate-qualifications {
+  padding: 10px;
+  span{
+    
+    font-weight: 600;
+    font-size: 17px;
+    
+  }
+  ul{
+    margin-bottom: 30px;
+    li{
+      color: #333;
+    }
+  }
+  .required_skills{
+    color: #333;
+    margin-left: 0px;
+  }
+
+}
+.role-and-responsibilities,
+.candidate-qualifications {
+  margin-top: 20px;
+  p{
+    font-size: 15px;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #333;
+    li {
+      font-size: 16px;
+      margin: 5px 0;
+      color: #333;
+    }
+  }
+}
+.job-Information{
+  float: right;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 20%;
+ left: 70%;
+ padding-right: 10px;
+
+.workplace{
+ font-size: 20px;
+}
+.income{
+ font-size: 20px;
+}
+.skills{
+  font-size: 20px;
+}
+}
+
+.apply-button {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: black; /* Button background color */
+    color: white; /* Text color */
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.apply-button:hover{
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    font-weight: 400;
+}
+/* Add any additional styles or modifications as needed */
+
+  }
+  
+  @media screen and (max-width: 600px) {
+    .job-description {
+      overflow-x: hidden;
+     width: 52vh;
+      padding: 10px;
+      margin: 10px;
+      margin-top: 96px; 
+      border-radius: 0px;
+      
+    h2 {
+      font-size: 18px;
+      // margin: 0;
+      // padding: 10px;
+      color: #333;
+      margin-left: 0px;
+    }
+  
+    p {
+      margin: 10px 0;
+      font-size: 11px;
+      margin-left: 0px;
+      color: #666;
+      // padding: 2px;
+    }
+  
+    p:first-child {
+      font-weight: bold;
+      // padding: 2px;
+    }
+
+    
+.job-actions {
+  
+  margin-top: 20px;
+  gap: 20px;
+  position: relative;
+  // top:0%;
+  left: 0%;
+}
+
+
+
+.back-button i {
+  margin-right: 5px;
+}
+.role-and-responsibilities {
+
+  padding: 0px;
+  span{ 
+    font-weight: 700;
+    font-size: 13px;
+    // margin-bottom: -10px;
+  }
+  .Company{
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+}
+
+.candidate-qualifications {
+  padding: 0px;
+  font-size: 13px;
+  // margin-bottom: -3px;
+  span{
+    // margin-bottom: -3px;
+    font-weight: 600;
+    font-size: 13px;
+  }
+  ul{
+    margin-bottom: 10px;
+    li{
+      color: #333;
+      font-size: 10px;
+    }
+  }
+  .required_skills{
+    color: #333;
+    margin-left: 0px;
+    font-size: 10px;
+  }
+
+}
+
+
+.role-and-responsibilities,
+.candidate-qualifications {
+  margin-top: 20px;
+  p{
+    font-size: 13px;
+  }
+  h3 {
+    font-size: 13px;
+    margin-bottom: 2px;
+  }
+
+  ul {
+    list-style-type: disc;
+    margin-left: 10px;
+    color: #333;
+    li {
+      font-size: 10px;
+      margin: 0;
+      color: #333;
+    }
+  }
+}
+
+
+.job-Information{
+  float: none;
+  
+  position: relative;
+  top: 20%;
+ left: 0%;
+ padding-right: 10px;
+
+.workplace{
+ font-size: 13px;
+}
+.income{
+ font-size: 13px;
+ font-weight: bold;
+}
+.skills{
+  font-size: 13px;
+  font-weight: bold;
+}
+}
+
+.success-message {
+  color: #4CAF50;
+  font-weight: bold;
+  text-align: center;
+}
+    }
+
+
+  }

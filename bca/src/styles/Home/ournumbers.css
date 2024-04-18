@@ -1,0 +1,309 @@
+@import url(./App.css);
+.ournumbers {
+  position: relative;
+  /* margin-bottom: 10px; */
+  /* background: linear-gradient(to top right, #4BB3FF, #4CFCFF, #00E395); */
+  background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+
+  padding: 1rem;
+}
+
+.ournumbers-container {
+  display: grid;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.ournumbers-container h2 {
+  display: flex;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 300;
+  margin-left: 2rem;
+}
+
+.ournumbers-container h2 strong {
+  margin: 0 0.5rem;
+}
+
+.ournumbers-container h2 img {
+  width: 34px;
+  height: 24px;
+}
+
+.numbers-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.active-users-box {
+  border-radius: 30px 0 0 30px;
+  border-right: none;
+  width: 20%;
+  height: 150px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #dde5ea;
+}
+
+.numbers-container h3 {
+  font-weight: 600;
+  font-size: 40px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.active-users-box h3::before {
+  content: "";
+
+  position: absolute;
+  width: 122px;
+  height: 200px;
+  bottom: -12px;
+  left: -18px;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.numbers-container span {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+
+
+.brands-box {
+  border-right: none;
+  width: 12%;
+  height: 130px;
+  padding: 5px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid #dde5ea; */
+  /* box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; */
+}
+
+.brands-box h3::before {
+  content: "";
+  /* background: #ebfef5; */
+  position: absolute;
+  width: 122px;
+  height: 122px;
+  bottom: -12px;
+  left: -18px;
+  z-index: -1;
+  border-radius: 50%;
+  /* background-color: whitesmoke; */
+}
+.box-hover:hover{
+  transform: scale(1.05); 
+  
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); Add a subtle shadow on hover */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.brands-box img ,.CandidatesBox img ,.countries-box img
+{
+  margin-bottom: -10px;
+  margin-top: -40px;
+  max-width: 50px; /* Adjust the size as needed */
+  border-radius: 50%;
+  /* display: block; */
+  /* margin: 0 auto; Center the image horizontally */
+}
+
+.CandidatesBox img{
+  width: 100px; /* Set the width to 200 pixels */
+  height: auto;
+  background-color: #f2f2f2;
+}
+.ournumbers .brands-box .CAP {
+  font-size: 40px; /* Adjust the size as needed */
+  font-weight: 600;
+  /* color: #4BB3FF, #4CFCFF, #00E395;; */
+}
+.CandidatesBox {
+  border-radius: 0 30px 30px 0;
+  border-right: none;
+  width: 12%;
+  height: 130px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; */
+}
+.CandidatesBox h3::before {
+  content: "";
+  /* background: #d7e8fe; */
+  position: absolute;
+  width: 122px;
+  height: 122px;
+  bottom: -12px;
+  left: -18px;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.countries-box {
+  border-radius: 0 30px 30px 0;
+  /* border-right: none; */
+  width: 12%;
+  height: 130px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid #dde5ea; */
+  /* box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; */
+}
+
+.countries-box h3::before {
+  content: "";
+  /* background: #d7e8fe; */
+  position: absolute;
+  width: 122px;
+  height: 122px;
+  bottom: -12px;
+  left: -18px;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+/* @media (min-width: 1201px) {
+  .ournumbers::before {
+    content: "";
+    position: absolute;
+    left: 54px;
+    bottom: 40px;
+    background-image: url(https://d8it4huxumps7.cloudfront.net/uploads/images/63de43bdce283_multi_color_dot.png?d=76x188);
+    width: 41px;
+    height: 102px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+} */
+
+@media (max-width: 1000px) {
+  .ournumbers-container h2 {
+    font-size: 40px;
+  }
+  .binary-box {
+    display: none;
+  }
+
+  .numbers-container > div {
+    width: 33%;
+    height: 170px;
+  }
+
+  .numbers-container h3 {
+    font-size: 30px;
+    margin-top: 36px;
+    margin-bottom: 15px;
+  }
+
+  .numbers-container h3::before {
+    width: 100px;
+    height: 100px;
+  }
+
+  .numbers-container span {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .ournumbers-container h2 {
+    font-size: 35px;
+  }
+
+  .numbers-container h3 {
+    font-size: 20px;
+    margin-top: 26px;
+    margin-bottom: 10px;
+  }
+
+  .numbers-container h3::before {
+    width: 80px;
+    height: 80px;
+  }
+
+  .numbers-container span {
+    font-size: 18px;
+  }
+}@media (max-width: 600px) {
+  .ournumbers{
+    width: 100%;
+  }
+  .ournumbers-container{
+    margin-top: 5rem;
+    /* width: 100wh; */
+    margin-left: 10px;
+  }
+  .ournumbers-container .numbers-container {
+    display: flex;
+    justify-content: center; /* Adjust this as needed for spacing */
+    position: relative;
+  }
+
+  .CandidatesBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  .ournumbers-container h2 {
+    font-size: 30px;
+  }
+
+  .numbers-container > div {
+    height: 150px;
+  }
+
+  .numbers-container h3 {
+    font-size: 15px;
+    margin-top: 16px;
+    margin-bottom: 5px;
+  }
+
+  .numbers-container h3::before {
+    width: 60px;
+    height: 60px;
+  }
+
+  .numbers-container span {
+    font-size: 15px;
+  }
+
+  .brands-box, .countries-box, .CandidatesBox {
+    /* margin: 10px 0; */
+    /* flex: none; */
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .our-num-span {
+    font-size: 12px;
+  }
+
+  .ournumbers .brands-box .CAP {
+    font-size: 15px;
+   
+  }
+}

@@ -1,0 +1,83 @@
+.jobcontainer{
+    display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.job_cardSection{
+    width: 69rem;
+    margin: 8rem;
+    padding: 1rem;
+    margin-top: 85px;
+}
+.Job_heading{
+    text-align: start;
+    font-size: 2rem;
+    margin-left: 10rem;
+    // margin-bottom: 2rem;
+    padding: 1rem;
+    font-weight: 700;
+}
+.close-btn {
+    cursor: pointer;
+}
+/* Jobs.scss */
+.add-job-form {
+    background-color: #f9f9f9;
+    padding: 10px;
+    padding-bottom: 0px;
+    border-radius: 5px;
+    width: 400px;
+    margin: 60px auto 0;
+    padding-bottom: 2px;
+}
+
+.add-job-form h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+    
+
+.add-job-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-job-form input[type="text"] {
+    width: calc(100% - 50px);
+    padding: 6px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    align-self: center; /* Add this line to center the button vertically */
+  
+}
+
+.add-job-form button[type="submit"] {
+    background-color: #4BB3FF;
+    color: #fff;
+    padding: 8px;
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: calc(100% - 150px);
+    align-self: center; /* Add this line to center the button vertically */
+    margin: 0 auto;
+   
+}
+
+.add-job-form button[type="submit"]:hover {
+    background-color: #4BB3FF;
+}
+
+  
+@media only screen and (max-width: 600px) {
+    .job_cardSection{
+        margin: 0;
+        margin-right: 10px;
+    }
+
+}
